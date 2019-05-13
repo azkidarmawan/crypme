@@ -31,7 +31,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">C R Y P M E</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -65,6 +65,107 @@
         <div class="intro-lead-in">Welcome To Our Studio!</div>
         <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <br></br>
+        <form>
+          <div class="form-row">
+            <div class="col-12 col-md-1">
+              <select name="encrypt_type" class="form-control form-control-lg">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-8 mb-2 mb-md-0">
+              <input type="text" name="message" class="form-control form-control-lg" placeholder="Enter your message..." onkeyup="check('message')">
+            </div>
+            <div class="col-12 col-md-3">
+              <button type="button" onclick="encrypt()" class="btn btn-block btn-lg btn-primary">Encrypt!</button>
+            </div>
+          </div>
+          <br></br>
+          <div class="form-row">
+            <div class="col-12 col-md-1">
+              <select name="decrypt_type" class="form-control form-control-lg">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-8 mb-2 mb-md-0">
+              <input type="text" name="code" class="form-control form-control-lg" placeholder="Enter secret code..." onkeyup="check('code')">
+            </div>
+            <div class="col-12 col-md-3">
+              <button type="button" onclick="decrypt()" class="btn btn-block btn-lg btn-primary">Decrypt!</button>
+            </div>
+          </div>
+          <input type="text" name="clipboard" class="form-control form-control-lg" style="opacity: 0;">
+        </form>
       </div>
     </div>
   </header>
@@ -75,24 +176,16 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Services</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">Your satisfaction is our priority.</h3>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-dollar-sign fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Responsive Design</h4>
+          <h4 class="service-heading">Free</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
         </div>
         <div class="col-md-4">
@@ -100,7 +193,15 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Web Security</h4>
+          <h4 class="service-heading">Secure</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Easy to Use</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
         </div>
       </div>
@@ -303,17 +404,17 @@
             <p class="text-muted">Lead Designer</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://twitter.com/">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
@@ -327,17 +428,17 @@
             <p class="text-muted">Lead Marketer</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://twitter.com/">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
@@ -351,17 +452,17 @@
             <p class="text-muted">Lead Developer</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://twitter.com/">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
@@ -455,22 +556,22 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Your Website 2019</span>
+          <span class="copyright">Copyright &copy; Crypme 2019</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://twitter.com/">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.facebook.com/">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.linkedin.com/">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
@@ -709,6 +810,46 @@
 
   <!-- Custom scripts for this template -->
   <script src="assets/agency.min.js"></script>
+
+  <script>
+  function encrypt() {
+    var x = document.getElementsByName("message")[0];
+    var y = document.getElementsByName("encrypt_type")[0].value;
+    var z = document.getElementsByName("clipboard")[0];
+    var xmlHttp = new XMLHttpRequest();
+    var theUrl = "/encrypt?message=" + x.value + "&type=" + y;
+    xmlHttp.open( "GET", theUrl, false );
+    xmlHttp.send( null );
+    z.value = xmlHttp.responseText;
+    z.select();
+    document.execCommand("copy");
+    alert("Thanks for using crypme, here is your encrypted message\n`Copied to clipboard`\n" + xmlHttp.responseText);
+  }
+
+  function decrypt() {
+    var x = document.getElementsByName("code")[0];
+    var y = document.getElementsByName("decrypt_type")[0].value;
+    var z = document.getElementsByName("clipboard")[0];
+    var xmlHttp = new XMLHttpRequest();
+    var theUrl = "/decrypt?code=" + x.value + "&type=" + y;
+    xmlHttp.open( "GET", theUrl, false );
+    xmlHttp.send( null );
+    z.value = xmlHttp.responseText;
+    z.select();
+    document.execCommand("copy");
+    alert("Thanks for using crypme, here is your decrypted message\n`Copied to clipboard`\n" + xmlHttp.responseText);
+  }
+
+  function check(name) {
+    var x = document.getElementsByName(name)[0];
+    var y = x.value.substring(x.value.length-1,x.value.length);
+    var letterNumber = /^[0-9a-zA-Z ]+$/;
+    if(y.match(letterNumber)) {
+    } else { 
+      x.value = x.value.replace(/[^0-9a-zA-Z ]/gi, '');
+    }
+  }
+  </script>
 
 </body>
 
